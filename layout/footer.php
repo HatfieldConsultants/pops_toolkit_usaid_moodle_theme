@@ -3,19 +3,19 @@
     <div class="container">
       <div class="row">
         <p>
-        <a href="http://localhost/index.php/%21trash/faq">
+        <a href="/index.php/%21trash/faq">
           FAQ / Help
         </a>
         | 
-        <a href="http://localhost/index.php/prioritization">
+        <a href="/index.php/prioritization">
           Case Studies
         </a>
         | 
-        <a href="http://localhost/index.php/%21trash/blog">
+        <a href="/index.php/%21trash/blog">
           Blog
         </a>
         | 
-        <a href="http://localhost/index.php">
+        <a href="/index.php">
           Another&nbsp;Link
         </a>
         </p>
