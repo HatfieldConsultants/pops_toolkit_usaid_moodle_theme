@@ -66,111 +66,7 @@
   </head>
   <body <?php echo $OUTPUT->body_attributes(); ?>>
     <div class="ccm-page page-template-full">
-      <header>
-        <div class="container">
-          <div class="col-xs-6">
-            <a href="/" class="">
-              <img src="/application/themes/usaid/images/logo.png" width="200px" style="margin-bottom: 15px;">
-            </a>
-          </div>
-          <div class="col-xs-6 text-right usaid-logo">
-            <a href="https://www.usaid.gov">
-              <img src="https://www.usaid.gov/sites/all/themes/usaid/logo.png" alt="U.S. Agency for International Development">
-            </a>
-          </div>
-        </div>
-        <div class="navbar">
-          <div class="container">
-            <nav class="ccm-responsive-navigation original">
-            <ul>
-              <li class="">
-              <a href="http://localhost/index.php/about-pops" target="_self" class="">
-                About POPs
-              </a>
-              </li>
-              <li class="">
-              <a href="http://localhost/index.php/prioritization" target="_self" class="">
-                Screening and Prioritization
-              </a>
-              </li>
-              <li class="">
-              <a href="http://localhost/index.php/sampling" target="_self" class="">
-                Project Planning
-              </a>
-              <ul>
-                <li class="">
-                <a href="http://localhost/index.php/sampling/problem-statement" target="_self" class="">
-                  Problem Statement
-                </a>
-                </li>
-                <li class="">
-                <a href="http://localhost/index.php/sampling/identify-preliminary-receptorspathwayschemicals-concern" target="_self" class="">
-                  Identify Preliminary Receptors/Pathways/Chemicals of Concern
-                </a>
-                </li>
-                <li class="">
-                <a href="http://localhost/index.php/sampling/develop-initial-conceptual-site-model" target="_self" class="">
-                  Develop Initial Conceptual Site Model
-                </a>
-                </li>
-                <li class="">
-                <a href="http://localhost/index.php/sampling/study-goals" target="_self" class="">
-                  Study Goals
-                </a>
-                </li>
-              </ul>
-              </li>
-              <li class="">
-              <a href="http://localhost/index.php/risk" target="_self" class="">
-                Risk Management
-              </a>
-              <ul>
-                <li class="">
-                <a href="http://localhost/index.php/risk/establish-goals" target="_self" class="">
-                  Establish Goals
-                </a>
-                </li>
-                <li class="">
-                <a href="http://localhost/index.php/risk/identify-and-screen-technologies" target="_self" class="">
-                  Identify and Screen Technologies
-                </a>
-                </li>
-                <li class="">
-                <a href="http://localhost/index.php/risk/develop-and-evaluate-alternatives" target="_self" class="">
-                  Develop and Evaluate Alternatives
-                </a>
-                </li>
-                <li class="">
-                <a href="http://localhost/index.php/risk/select-alternatives" target="_self" class="">
-                  Select Alternatives
-                </a>
-                </li>
-                <li class="">
-                <a href="http://localhost/index.php/risk/design-and-implement" target="_self" class="">
-                  Design and Implement
-                </a>
-                </li>
-              </ul>
-              </li>
-              <li class="">
-              <a href="http://localhost/index.php/collect-data-implement-pp" target="_self" class="">
-                Collect Data
-              </a>
-              </li>
-              <li class="">
-              <a href="http://localhost/index.php/data-validation-and-usability" target="_self" class="">
-                Data Validation and Usability
-              </a>
-              </li>
-            </ul>
-            </nav>
-            <div class="ccm-responsive-menu-launch">
-              <i>
-              </i>
-            </div>
-          </div>
-        </div>
-      </header>
+      <?php require('header.php') ?>
       <div id="page" class="container-fluid">
         <div id="page-content" class="row-fluid">
           <?php echo $OUTPUT->blocks('side-post', $sidepost); ?>
@@ -188,52 +84,12 @@
           </div>
         </div>
       </div>
-      <footer id="footer-theme">
-        <div class="col-md-12 footerbar">
-          <div class="container">
-            <div class="row">
-              <p>
-              <a href="http://localhost/index.php/%21trash/faq">
-                FAQ / Help
-              </a>
-              | 
-              <a href="http://localhost/index.php/prioritization">
-                Case Studies
-              </a>
-              | 
-              <a href="http://localhost/index.php/%21trash/blog">
-                Blog
-              </a>
-              | 
-              <a href="http://localhost/index.php">
-                Another&nbsp;Link
-              </a>
-              </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 footerlinks">
-              <div class="container">
-                <div class="row">
-                  <p>
-                  <small>
-                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Accessibility</a>
-                  </small>
-                  </p>
-                  <small>
-                    The information provided on this website is not official U.S. government information and does not represent the views or positions of the U.S. Agency for International Development or the U.S. Government.
-                  </small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-      <script id="__bs_script__">
-        //<![CDATA[
-        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));
-          //]]>
+      <?php require('footer.php') ?>
+    </div>
+    <script id="__bs_script__">
+      //<![CDATA[
+      document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));
+        //]]>
     </script>
   </body>
 </html>
