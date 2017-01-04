@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Moodle's Clean theme, an example of how to make a Bootstrap theme
+ * Moodle's USAID theme, an example of how to make a Bootstrap theme
  *
  * DO NOT MODIFY THIS THEME!
  * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
@@ -23,7 +23,7 @@
  * For full information about creating Moodle themes, see:
  * http://docs.moodle.org/dev/Themes_2.0
  *
- * @package   theme_clean
+ * @package   theme_usaid
  * @copyright 2013 Moodle, moodle.org
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -33,50 +33,50 @@ defined('MOODLE_INTERNAL') || die;
 if ($ADMIN->fulltree) {
 
     // Invert Navbar to dark background.
-    $name = 'theme_clean/invert';
-    $title = get_string('invert', 'theme_clean');
-    $description = get_string('invertdesc', 'theme_clean');
+    $name = 'theme_usaid/invert';
+    $title = get_string('invert', 'theme_usaid');
+    $description = get_string('invertdesc', 'theme_usaid');
     $setting = new admin_setting_configcheckbox($name, $title, $description, 0);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
     // Logo file setting.
-    $name = 'theme_clean/logo';
-    $title = get_string('logo','theme_clean');
-    $description = get_string('logodesc', 'theme_clean');
+    $name = 'theme_usaid/logo';
+    $title = get_string('logo','theme_usaid');
+    $description = get_string('logodesc', 'theme_usaid');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
     // Small logo file setting.
-    $name = 'theme_clean/smalllogo';
-    $title = get_string('smalllogo', 'theme_clean');
-    $description = get_string('smalllogodesc', 'theme_clean');
+    $name = 'theme_usaid/smalllogo';
+    $title = get_string('smalllogo', 'theme_usaid');
+    $description = get_string('smalllogodesc', 'theme_usaid');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'smalllogo');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
     // Show site name along with small logo.
-    $name = 'theme_clean/sitename';
-    $title = get_string('sitename', 'theme_clean');
-    $description = get_string('sitenamedesc', 'theme_clean');
+    $name = 'theme_usaid/sitename';
+    $title = get_string('sitename', 'theme_usaid');
+    $description = get_string('sitenamedesc', 'theme_usaid');
     $setting = new admin_setting_configcheckbox($name, $title, $description, 1);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
     // Custom CSS file.
-    $name = 'theme_clean/customcss';
-    $title = get_string('customcss', 'theme_clean');
-    $description = get_string('customcssdesc', 'theme_clean');
+    $name = 'theme_usaid/customcss';
+    $title = get_string('customcss', 'theme_usaid');
+    $description = get_string('customcssdesc', 'theme_usaid');
     $default = '';
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
     // Footnote setting.
-    $name = 'theme_clean/footnote';
-    $title = get_string('footnote', 'theme_clean');
-    $description = get_string('footnotedesc', 'theme_clean');
+    $name = 'theme_usaid/footnote';
+    $title = get_string('footnote', 'theme_usaid');
+    $description = get_string('footnotedesc', 'theme_usaid');
     $default = '';
     $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
