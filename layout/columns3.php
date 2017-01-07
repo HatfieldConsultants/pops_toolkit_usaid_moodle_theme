@@ -47,7 +47,7 @@
   <head>
     <?php echo $OUTPUT->standard_head_html() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
-    <link rel="stylesheet" type="text/css" href="/application/themes/usaid/css/bootstrap-modified.css">
+    <link rel="stylesheet" type="text/css" href="/packages/usaid/themes/usaid/css/bootstrap-modified.css">
     <link href="/application/files/cache/css/usaid/main.css?ts=1483554223" rel="stylesheet" type="text/css" media="all">
     <link href="/concrete/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
     <script type="text/javascript" src="/concrete/js/jquery.js"></script>
